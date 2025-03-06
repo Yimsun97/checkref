@@ -1,0 +1,6 @@
+.env
+.vscode
+.pytest_cache
+src/**/__pycache__
+tests/**/__pycache__
+src/run_checker_demo.sh

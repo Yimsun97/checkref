@@ -1,0 +1,8 @@
+```
+| 错误格式 | 正确格式 | 错误原因 |
+| Daniel S, Charlie B, Abedi H, et al. pyGAM: Generalized Additive Models in Python[EB/OL]. | Daniel S, Charlie B, Abedi H, et al. pyGAM: Generalized Additive Models in Python[EB/OL]. https://pygam.readthedocs.io/en/latest/. | 6 |
+```
+| Green M B, Wang D. 2008. Watershed flow paths and stream water nitrogen‐to‐phosphorus ratios under simulated precipitation regimes. Water Resources Research[J], 44: W12414. | Green M B, Wang D. 2008. Watershed flow paths and stream water nitrogen-to-phosphorus ratios under simulated precipitation regimes. Water Resources Research[J], 44: W12414. | 9 |
+| Guo Y, Markus M, Demissie M. 2002. Uncertainty of nitrate-N load computations for agricultural watersheds. Water Resources Research[J], 38: 1185. | Guo Y, Markus M, Demissie M. 2002. Uncertainty of nitrate-N load computations for agricultural watersheds. Water Resources Research[J], 38: 1185. | 7 |
+| Harris I, Osborn T J, Jones P, et al. 2020. Version 4 of the CRU TS monthly high-resolution gridded multivariate climate dataset. Scientific data[J], 7: 109. | Harris I, Osborn T J, Jones P, et al. 2020. Version 4 of the CRU TS monthly high-resolution gridded multivariate climate dataset. Scientific Data[J], 7: 109. | 5 |
+| Heberger M. delineator.py: Fast, accurate watershed delineation using hybrid vector- and raster-based methods and data from MERIT-Hydro (v1.3)[EB/OL]. | Heberger M. delineator.py: Fast, accurate watershed delineation using hybrid vector- and raster-based methods and data from MERIT-Hydro (v1.3)[EB/OL]. https://example.com. | 6 |

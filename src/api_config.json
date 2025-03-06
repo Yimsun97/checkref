@@ -1,0 +1,22 @@
+{
+    "deepseek": {
+        "base_url": "https://api.deepseek.com",
+        "api_name": "DEEPSEEK_API_KEY",
+        "models": ["deepseek-chat", "deepseek-reasoning"]
+    },
+    "aliyun": {
+        "base_url": "https://dashscope.aliyuncs.com/compatible-mode/v1",
+        "api_name": "DASHSCOPE_API_KEY",
+        "models": ["deepseek-r1", "deepseek-v3", "qwen-max", "qwen-turbo"]
+    },
+    "tencent": {
+        "base_url": "https://api.lkeap.cloud.tencent.com/v1",
+        "api_name": "TENCENT_API_KEY",
+        "models": ["deepseek-r1", "deepseek-v3"]
+    },
+    "huoshan": {
+        "base_url": "https://ark.cn-beijing.volces.com/api/v3",
+        "api_name": "HUOSHAN_API_KEY",
+        "models": ["deepseek-r1-250120", "deepseek-v3-241226"]
+    }
+}

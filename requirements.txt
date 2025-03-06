@@ -1,0 +1,5 @@
+pandas
+llm-client
+requests
+openai
+python-dotenv
