@@ -40,10 +40,15 @@ CheckRef is a reference modification tool that utilizes a large language model A
 ## Usage
 
 1. Prepare a text file containing your references, with each reference on a new line.
-2. Run the application:
+2. Run the application in the Unix terminal:
    ```
    cd src && . run_checker.sh
    ```
+   Or run the application in the Windows command prompt:
+   ```
+   cd src && run_checker.bat
+   ```
+   
 
 ## Further Development
 1. If you want to add a new API provider, you can change the `config.py` in the `src` directory. The file contains the base URLs for the supported API providers and the environment variables required to access the APIs. You can add a new API provider by adding a new entry to the `API_PROVIDERS` dictionary.
