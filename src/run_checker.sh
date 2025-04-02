@@ -3,8 +3,8 @@ api_provider=aliyun
 model=deepseek-v3
 num_per_request=50
 REF_PATH=<path_to_your_reference_list>
-INPUT_FILE = $REF_PATH/<your_reference_list>.csv
-OUTPUT_PATH = $REF_PATH/<your_reference_list>_
+INPUT_FILE=$REF_PATH/<your_reference_list>.csv
+OUTPUT_PATH=$REF_PATH/<your_reference_list>_
 
 # start the script
 echo "Start"

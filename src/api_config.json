@@ -18,5 +18,10 @@
         "base_url": "https://ark.cn-beijing.volces.com/api/v3",
         "api_name": "HUOSHAN_API_KEY",
         "models": ["deepseek-r1-250120", "deepseek-v3-241226"]
+    },
+    "openrouter": {
+        "base_url": "https://openrouter.ai/api/v1/",
+        "api_name": "OPENROUTER_API_KEY",
+        "models": ["deepseek/deepseek-chat-v3-0324:free", "deepseek/deepseek-r1-zero:free"]
     }
 }

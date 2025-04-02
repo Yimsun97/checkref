@@ -20,15 +20,23 @@ CheckRef is a reference modification tool that utilizes a large language model A
    ```
    pip install -r requirements.txt
    ```
+   If you are using a virtual environment, make sure to activate it before running the above command.
+
+   If you are using Anaconda, you can create a new environment and install the dependencies as follows:
+   ```
+   conda create -n checkref python=3.11
+   conda activate checkref
+   pip install -r requirements.txt
+   ```
 
 3. Set up your environment variables:
-   - Create a `.env` file in the `src` directory and add your API key:
-     ```
-     <LLM_API_KEY>=<your_api_key_here>
-     ```
+   - Create a `.env` file based on `.env.example` and add your API key:
+      ```
+      cp .env.example .env
+      ``` 
 
 ## Supported API Providers
-   Currently, the supported APIs include 'deepseek', 'aliyun', 'tencent', and 'huoshan'. You should have an API key for one of these APIs and set the key before running the application.
+   Currently, the supported APIs include 'deepseek', 'aliyun', 'tencent', 'huoshan', and 'openrouter'. You should have an API key for one of these APIs and set the key before running the application.
 
 | API Provider | Base URL | Environment Variable | Available Models |
 |-------------|----------|---------------------|-----------------|
@@ -36,11 +44,12 @@ CheckRef is a reference modification tool that utilizes a large language model A
 | aliyun | https://dashscope.aliyuncs.com/compatible-mode/v1 | DASHSCOPE_API_KEY | deepseek-r1, deepseek-v3, qwen-max, qwen-turbo |
 | tencent | https://api.lkeap.cloud.tencent.com/v1 | TENCENT_API_KEY | deepseek-r1, deepseek-v3 |
 | huoshan | https://ark.cn-beijing.volces.com/api/v3 | HUOSHAN_API_KEY | deepseek-r1-250120, deepseek-v3-241226 |
+| openrouter | https://api.openrouter.ai/v1 | OPENROUTER_API_KEY | deepseek/deepseek-chat-v3-0324:free, deepseek/deepseek-r1-zero:free |
 
 ## Usage
 
 1. Prepare a text file containing your references, with each reference on a new line.
-2. Run the application in the Unix terminal:
+2. Run the application in the Unix-like terminal:
    ```
    cd src && . run_checker.sh
    ```
@@ -48,7 +57,23 @@ CheckRef is a reference modification tool that utilizes a large language model A
    ```
    cd src && run_checker.bat
    ```
-   
+
+## Error Code System
+
+CheckRef uses the following encoding system to identify reference errors:
+
+| Code | Error Type              | Description                                       |
+|------|-------------------------|---------------------------------------------------|
+| 1    | Author Format Error     | Incorrect formatting of author names              |
+| 2    | Punctuation Error       | Incorrect use of punctuation marks                |
+| 3    | Missing Reference Type  | Reference type not specified                      |
+| 4    | Date Format Error       | Incorrect formatting of dates                     |
+| 5    | Journal Name Error      | Non-standard journal name format                  |
+| 6    | Missing Publication Info| Missing publisher or publication information      |
+| 7    | Page Number Error       | Incorrect formatting of page numbers              |
+| 8    | Resource ID Error       | Incorrect DOI, ISBN, or other identifiers         |
+| 9    | Special Symbol Error    | Incorrect use of special symbols                  |
+| 10   | Field Order Error       | Incorrect order of reference fields               |
 
 ## Further Development
 1. If you want to add a new API provider, you can change the `config.py` in the `src` directory. The file contains the base URLs for the supported API providers and the environment variables required to access the APIs. You can add a new API provider by adding a new entry to the `API_PROVIDERS` dictionary.
